@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Inscription</title>
+    
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <a href="acceuil.html">Home</a>
+            <a href="Projets et tâches.html">Projets et tâches</a>
+            <a href="Liste employes.html">Liste employés</a>
+            <a href="Inscription.html"> Inscription</a>
+            
+            
+        </nav>
+        <hr>
+        <section align="center">
+            <img src="assets\img1.jpg" height="100%" width="50%" alt="Banner">
+            </section>
+
+    </header>
+        <section>
+        <form >
+            <table>
+                <tr>
+                    <h1><b>Inscription au site</b></h1>
+                </tr>
+                <tr>
+                    <td>
+                        <label >nom :</label>
+                    </td>
+                    <td>
+                        <input type="text"name="nom" required minlength="2" pattern="[A-Za-z]" title="Veuillez entrer un 
+                        nom valide (lettres uniquement)" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label >prenom :</label>
+                    </td>
+                    <td>
+                        <input type="text"name="prenom" required minlength="2"pattern="[A-Za-z]" title="Veuillez entrer un 
+                        prenom valide (lettres uniquement)"  >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label >email :</label>
+                    </td>
+                    <td>
+                        <input type="email"name="email"required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label >telephone :</label>
+                    </td>
+                    <td>
+                        <input type="text"name="prenom" required pattern="[1-9]{8}"title="Veuillez entrer un 
+                        numéro de téléphone valide (8 chiffres)"  >
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label >date de naissance :</label>
+                    </td>
+                    <td>
+                        <input type="date"name="date"required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label >mot de passe :</label>
+                    </td>
+                    <td>
+                        <input type="text"name="password"required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button"value="s'inscrire">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <hr>
+    </section>
+    <footer>
+        <p>contacter nous <a href="mailto:ghassen.boufaden@gmail.com">ghassen.boufaden@gmail.com</a></p> 
+        <p>adresse: ghazela</p>
+    </footer>
+    
+</body>
+</html>
