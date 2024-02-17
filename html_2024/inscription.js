@@ -30,9 +30,9 @@ function validateForm(){
     var prenomError = document.getElementById("prenomError");
     var prenomValue = prenomInput.value.trim(); 
 
-    var mailInput = document.getElementById("mail");
+    /*var mailInput = document.getElementById("mail");
     var mailError = document.getElementById("mailError");
-    var mailValue = mailInput.value.trim(); 
+    var mailValue = mailInput.value.trim();*/ 
 
     var telInput = document.getElementById("telephone");
     var telError = document.getElementById("telError");
@@ -93,3 +93,21 @@ function validateForm(){
         mdpError.style.color = "green";
     }
 }
+var mailInput = document.getElementById("mail");
+mailInput.addEventListener("keyup",function(){
+    validatMail()
+
+})
+function validatMail(){
+    var mailError = document.getElementById("mailError")
+    var mailValue =mailInput.value;
+    var mailpatter =/^[a-z A-Z 0-9 _%+-]+@esprit.tn$/
+    if(!mailValue.match(mailpatter)){
+        mailError.textContent ="mail incorrect"; 
+    } else{
+        mailError.textContent = "correct";
+        mailError.style.color = "green";
+
+    }
+}
+
